@@ -1,4 +1,4 @@
-# Product-Landing-Page---FCC
+# Product-Landing-Page-FCC
 A freeCodeCamp Project
 
 
