@@ -1,0 +1,412 @@
+*{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  header{
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    padding: 20px 20px 10px 20px;
+    height: 100px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: white;
+  
+  }
+  
+  #logo, #allnav, #TryNow{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #logo h1{
+    margin-left: 10px;
+    font-weight:bolder;
+  }
+  
+  #header-img{
+    width: 50px;
+  }
+  
+  #logo{
+    align-items: center;
+    flex:1;
+  }
+  
+  nav{
+    flex:2;
+  }
+  
+  .nav-toggle{
+    display: none;
+  }
+  
+  #allnav{
+  justify-content: space-around;
+  list-style: none;
+  }
+  
+  .nav-link{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+  }
+  
+  #Trynow{
+    flex: 1;
+    text-align: right;
+  }
+  
+  #Trynow h3 a{
+  text-decoration: none;
+  padding:10px 20px 10px 20px;
+  background: #FB790E;
+  color: white;
+  }
+  
+  #Presentation{
+  display:flex;
+  flex-direction: column;
+  grid-row-gap: 5vw;
+  width: 100%;
+  margin: auto;
+  
+  }
+  
+  #heroimage {
+  position: relative;
+  align-items: center;
+  width: 100%;
+  }
+  
+  #heroimage img{
+  
+    object-fit:contain;
+    width: 100%;
+  
+  }
+  
+  #heroimage h1{
+  position: absolute;
+  text-align: center;
+  top: 22vw;
+  left: 0;
+  right: 0;
+  color: white;
+  font-size:8vw;
+  background: black;
+  opacity: 0.9;
+  padding:20px 0px 20px 0px;
+  }
+  
+  #heroimage h1 strong{
+    color: #f16f04;
+  }
+  
+  #form{
+  position: absolute;
+  text-align: center;
+  top: 45vw;
+  left: 0;
+  right: 0;
+  color: white;
+  font-size: 5vw;
+  opacity: 0.9;
+  padding:20px 0px;
+  opacity: 0.9;
+  }
+  
+  #email{
+    width:50%;
+    height: 3rem;
+  }
+  
+  #submit{
+    width: 15%;
+    height: 3rem;
+    font-size: 14px;
+    background: #FB790E;
+    border: none;
+    color: white;
+  }
+  
+  #Features{
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    padding:5% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  #Features img{
+  width: 65%;
+  flex:1;
+  
+  }
+  
+  #featuresgrid{
+    flex:1;
+    display: flex;
+    padding: 5%;
+    text-align: center;
+  
+  }
+  
+  .icon{
+    object-fit: contain;
+    max-width: 50%;
+  }
+  
+  #Plans-box{
+    background-image: url("https://i0.wp.com/templarchambers.com/wp-content/uploads/2019/06/Vecteezy-16-7540-15-Copy.jpg?w=1280&ssl=1");
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+  
+  #Plans{
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin:5% auto;
+  
+  }
+  
+  .planslist{
+    list-style: none;
+  }
+  
+  .planslist li strong{
+    font-size: 18px;
+  }
+  
+  .Artist, .Studio, .Professional{
+  line-height: 3;
+  flex:1;
+  border: 3px solid black;
+  text-align: center;
+  margin: 0 3%;
+  padding: 8% 0;
+  }
+  
+  .starttrial{
+    width: 10em;
+    padding:5%;
+    background: #FB790E;
+    border: none;
+    color: white;
+    margin-top: 5%;
+    font-size: 17px;
+  }
+  
+  #DAWSupport{
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    padding:5% 5%;
+    align-items: center;
+  
+  }
+  
+  #DAWSupport p {
+    text-align: center;
+    flex:1;
+    padding: 0 2%;
+    font-size: 20px;
+  }
+  
+  #video{
+    flex:2;
+    width: 100%;
+  }
+  
+  footer {
+    display: flex;
+    height: 100px;
+    color: white;
+    background: #1C1D22;
+    align-items: center;
+    margin: auto;
+    justify-content: center; 
+  }
+  
+  footer p{
+    
+    Padding:0 1em;
+    text-align:center;
+  } 
+  
+  @media only screen  and (max-width:768px) {
+  
+    header{
+    display: flex;
+    flex-direction:column;
+    margin:auto;
+    width: 100%;
+    height:70px;
+  }
+  
+  #logo h1{
+    font-weight:bolder;
+    font-size: 1.8em;
+  }
+  
+  #header-img{
+    width: 35px;
+  }
+  
+  nav{
+    flex:1;
+    width:70%;
+    line-height:3;
+    background: white;
+    height: 100vw;
+    transform: scale(0,1);
+    transform-origin: right;
+    transition: transform 300ms ease-in-out 200ms;
+    z-index: -1;
+    opacity: 0.99;
+  }
+  
+  nav ul{
+  margin-top:30px;
+  list-style: none;
+  }
+  
+  nav li{
+  margin: 1em;
+  }
+  
+  
+  .logo-container{
+    align-items: center;
+    margin: auto;
+    flex:1;
+    margin-left: 1em;
+  
+  }
+  
+  .nav-toggle-label{
+  position: absolute;
+  right: 10px;
+  top:35px;
+  margin-left: 1em;
+  }
+  
+  .nav-toggle:checked ~ nav{
+    transform: scale(1,1);
+  
+  }
+  
+  .nav-toggle:checked ~ label{
+    transform: rotate(90deg);
+    transition: transform 300ms ease-in-out 50ms;
+  }
+  
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after{
+  display: block;
+  background: black;
+  height:4px;
+  width: 1.5em;
+  border-radius:2em;
+  }
+  
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after{
+  content: "";
+  position: absolute;
+  }
+  
+  .nav-toggle-label span::before{
+  bottom: -8px;
+  }
+  
+  .nav-toggle-label span::after{
+  bottom: 8px;
+  }
+  
+  
+  #allnav{
+      flex-direction: column;
+    }
+  
+    #Trynow{
+      display: none;
+    }
+  
+    #heroimage {
+    flex-direction: column;
+    width: 100%;
+    }
+  
+    #heroimage img{
+      object-fit:cover;
+      height: 60vh;
+      width: 100%;
+    }
+  
+    #heroimage h1{
+    top: 25vw;
+    color: white;
+    font-size:10vw;
+    background: black;
+    opacity: 0.9;
+    }
+  
+    #form{
+      padding:15% 5%;
+    }
+  
+    #email{
+      width:100%;
+      height: 3rem;
+    }
+  
+    #submit{
+      width: 100%;
+      height: 3rem;
+      margin-top: 3%;
+    }
+  
+    #Features img{
+    object-fit: contain;
+    width: 90vw;
+    }
+  
+    #Plans{
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .Artist, .Studio, .Professional{
+    margin-top: 10%;
+    width: 70%;
+    }
+  
+    #DAWSupport{
+      display: block;
+      margin: 10% auto;
+      flex-direction: row;
+    }
+    #video{
+      margin: 5% auto;
+      height: 300px;
+    }
+  }
+  
